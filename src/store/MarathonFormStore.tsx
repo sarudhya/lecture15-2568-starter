@@ -9,6 +9,7 @@ export const useMarathonFormStore = create<MarathonFormState>((set) => ({
   buyShoes: false,
   buyCap: false,
   total: 0,
+  email:"",
   setFname: (fname) =>
     set(() => ({
       fname: fname,
@@ -36,6 +37,9 @@ export const useMarathonFormStore = create<MarathonFormState>((set) => ({
   setBuyCap: (_buyCap) =>
     set(() => ({
       buyCap: _buyCap,
+    })),
+    setEmail: (_email) => set(() => ({
+      email: _email
     })),
   // Function คำนวณ total ตรงนี้
   computeTotalPayment: () =>
@@ -72,5 +76,6 @@ export const useMarathonFormStore = create<MarathonFormState>((set) => ({
       buyShoes: false,
       buyCap: false,
       total: 0,
+      email:"",
     }),
 }));

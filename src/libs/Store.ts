@@ -8,6 +8,7 @@ interface MarathonFormState {
   buyShoes: boolean;
   buyCap: boolean;
   total: number;
+  email: string;
   // Setters
   setFname: (v: string) => void;
   setLname: (v: string) => void;
@@ -16,6 +17,7 @@ interface MarathonFormState {
   setBuyBottle: (v: boolean) => void;
   setBuyShoes: (v: boolean) => void;
   setBuyCap: (v: boolean) => void;
+  setEmail: ( v: string ) => void;
   // Function คำนวณ total ตรงนี้
   computeTotalPayment: () => void;
   reset: () => void;
